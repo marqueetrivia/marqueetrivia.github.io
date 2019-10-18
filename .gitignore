@@ -1,8 +1,15 @@
+*.sql
 *.log
 .cache
 .DS_Store
-src/.temp
+.temp
 node_modules
 dist
+wp-images
 .env
 .env.*
+server/
+vendor/
+.data/
+prodIDs
+prodInfoTable

@@ -1,0 +1,39 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    volumes:
+      - "./server/:/var/www/html"
+    ports:
+      - 8000:80
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: xcelluser
+      WORDPRESS_DB_PASSWORD: xcell
+      WORDPRESS_DB_NAME: xcelllocal
+  db:
+    image: mysql:latest
+    restart: always
+    volumes:
+      - "./.data/db:/var/lib/mysql"
+    environment:
+      MYSQL_DATABASE: xcelllocal
+      MYSQL_USER: xcelluser
+      MYSQL_PASSWORD: xcell
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    links:
+      - db:mysql
+    ports:
+      - 8181:80
+    restart: always
+    environment:
+      MYSQL_USERNAME: xcelluser
+      MYSQL_ROOT_PASSWORD: xcell
+      PMA_HOST: mysql
