@@ -23,13 +23,13 @@ $breakpoints: (
 $black: #000;
 $white: #fff;
 $button-blue: cornflower;
-$dark-blue: #173753;
-$blue-grey: #ced8dc;
-$black-grey: #222;
-$text-black: #414550;
-$off-black: #111;
-$grey: #797979;
-$grey-lighten: #fafafa;
+$background-blue: #324A5F;
+$marquee-red: #BF211E;
+$light-board-white: #FBFFFE;
+$light-board-off-white: #EFF1ED;
+$text-black: #2A2E45;
+$gilding: #F2AF29;
+$cta-purple: #A682FF;
 
 // Overlays
 $smoke: rgba($black-grey, .33);
@@ -37,7 +37,7 @@ $smoke: rgba($black-grey, .33);
 // Typography
 $default-font-size : 1rem;
 $default-line-height : 1.33rem;
-$body-font: "Roboto", "sans-serif";
+$body-font: 'Merriweather Sans', sans-serif;
 
 // Buttons
 $button-border: none;
