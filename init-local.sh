@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "Cleaning old files..."
-rm -rf server/wp-content/themes/bxcell-admin
+rm -rf server/wp-content/themes/trivia-admin
 echo "Copying admin theme files..."
 cp -r theme server/wp-content/themes
 echo "Renaming admin theme folder..."
-mv server/wp-content/themes/theme server/wp-content/themes/bxcell-admin
+mv server/wp-content/themes/theme server/wp-content/themes/trivia-admin
 for arg in "$@"
 do
   if [ "$arg" == "--composer" ] || [ "$arg" == "-c" ]

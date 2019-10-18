@@ -11,18 +11,18 @@ services:
       - 8000:80
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: xcelluser
-      WORDPRESS_DB_PASSWORD: xcell
-      WORDPRESS_DB_NAME: xcelllocal
+      WORDPRESS_DB_USER: triviauser
+      WORDPRESS_DB_PASSWORD: trivia
+      WORDPRESS_DB_NAME: trivialocal
   db:
     image: mysql:latest
     restart: always
     volumes:
       - "./.data/db:/var/lib/mysql"
     environment:
-      MYSQL_DATABASE: xcelllocal
-      MYSQL_USER: xcelluser
-      MYSQL_PASSWORD: xcell
+      MYSQL_DATABASE: trivialocal
+      MYSQL_USER: triviauser
+      MYSQL_PASSWORD: trivia
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -34,6 +34,6 @@ services:
       - 8181:80
     restart: always
     environment:
-      MYSQL_USERNAME: xcelluser
-      MYSQL_ROOT_PASSWORD: xcell
+      MYSQL_USERNAME: triviauser
+      MYSQL_ROOT_PASSWORD: trivia
       PMA_HOST: mysql
