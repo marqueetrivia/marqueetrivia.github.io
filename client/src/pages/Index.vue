@@ -1,8 +1,8 @@
 <template>
   <Layout>
-
-    
-
+    <article class="container">
+      <main></main>
+    </article>
   </Layout>
 </template>
 

@@ -18,8 +18,24 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: [],
+  siteName: 'Marquee Trivia',
+  siteUrl: 'https://marqueetrivia.com',
+  titleTemplate: 'Marquee Trivia - %s',
+  plugins: [
+    {
+      use: '@gridsome/source-wordpress',
+      options: {
+        baseUrl: 'http://localhost:8000',
+        apiBase: 'wp-json',
+        typeName: 'WordPress',
+        perPage: 100,
+        concurrent: 10,
+        routes: {
+          post: '/:slug/',
+        },
+      },
+    },
+  ],
   chainWebpack(config) {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
 
