@@ -1,0 +1,9 @@
+@mixin media($bp) {
+  @each $key, $value in $breakpoints {
+    @if $key == $bp {
+      @media #{map-get($value, 'breakpoint')} {
+        @content
+      }
+    }
+  }
+}

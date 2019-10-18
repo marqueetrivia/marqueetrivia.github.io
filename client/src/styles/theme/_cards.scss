@@ -1,0 +1,14 @@
+.card {
+  padding: 15px;
+  background-color: $white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: background-color .25s ease, box-shadow .25s ease;
+  @include elevate(1);
+  &--hover-effect {
+    cursor: pointer;
+    &:hover {
+      @include elevate(2);
+    }
+  }
+}

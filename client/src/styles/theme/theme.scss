@@ -1,0 +1,15 @@
+@import "reset";
+@import "grid";
+@import "typography";
+@import "buttons";
+@import "sections";
+@import "cards";
+
+#app {
+  padding-top: 82px;
+}
+
+.surface {
+  border-radius: 4px;
+  background-color: $white;
+}
