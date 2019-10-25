@@ -11,5 +11,4 @@ wp-images
 server/
 vendor/
 .data/
-prodIDs
-prodInfoTable
+keys.php
