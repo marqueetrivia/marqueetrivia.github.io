@@ -7,13 +7,13 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.9"
   },
   "devDependencies": {
     "@gridsome/source-wordpress": "^0.4.3",
     "gridsome-helper-json": "^1.0.3",
     "lodash": "^4.17.15",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "style-resources-loader": "^1.2.1"
   }

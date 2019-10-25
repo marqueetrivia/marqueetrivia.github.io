@@ -6,10 +6,101 @@
 @import "cards";
 
 #app {
-  padding-top: 82px;
+  background-color: $white;
+  min-height: 100vh;
 }
 
 .surface {
   border-radius: 4px;
   background-color: $white;
+}
+
+#site-header {
+  padding: 10vh 0 0;
+  position: relative;
+  z-index: 3;
+  .logo-container {
+    text-align: center;
+    background-color: $marquee-red;
+    padding: 10px 10px 0px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    position: relative;
+    top: 10px;
+    left: 25%;
+    display: inline-block;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 50%;
+    @include elevate(1);
+    .logo {
+      background-color: $light-board-white;
+      border: 10px solid $gilding;
+      border-radius: 4px;
+      padding: 5px 10px;
+      position: relative;
+      top: -2px;
+      color: $text-black;
+      text-shadow: 2px 2px 1.5px rgba($black, .25);
+      letter-spacing: 2px;
+      @include elevate(2);
+    }
+  }
+}
+
+.lightboard {
+  border: 30px solid $gilding;
+  border-radius: 7px;
+  margin: 0px auto 10px;
+  position: relative;
+  max-width: 1000px;
+  a {
+    color: $text-black;
+    text-shadow: 2px 2px 1.5px rgba($black, .25);
+  }
+  @include elevate(2);
+  &__inner {
+    @include elevate(1);
+  }
+  &__row {
+    text-align: center;
+    height: 50px;
+    line-height: 1.2;
+    padding: 5px 0px;
+    background-color: $light-board-white;
+    * {
+      font-size: 4rem;
+    }
+    &:nth-child(odd) {
+      background-color: $light-board-off-white;
+    }
+  }
+  &__link {
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
+}
+
+#site-footer {
+  background-color: $background-black;
+  text-align: center;
+  padding: 20px 0px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .social-links {
+    &__menu {
+      li {
+        display: inline-block;
+        padding: 10px;
+      }
+    }
+    &__cta {
+      font-weight: 700;
+      color: $cta-purple;
+    }
+  }
+  .copyright {
+    color: $white;
+  }
 }

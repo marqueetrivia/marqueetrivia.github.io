@@ -32,6 +32,7 @@ module.exports = {
         concurrent: 10,
         routes: {
           post: '/:slug/',
+          triviaEvent: '/event/:slug/'
         },
       },
     },

@@ -22,21 +22,24 @@ $breakpoints: (
 // Color Palette
 $black: #000;
 $white: #fff;
-$button-blue: cornflower;
+$button-blue: #276FBF;
 $background-blue: #324A5F;
-$marquee-red: #BF211E;
+$background-black: #1D1E2C;
+$marquee-red: #961A18;
 $light-board-white: #FBFFFE;
 $light-board-off-white: #EFF1ED;
 $text-black: #2A2E45;
-$gilding: #F2AF29;
+$text-purple: #2E294E;
+$gilding: #F5BB00;
+$orange: #F46036;
+$light-blue: #A8DADC;
+$green: #1B998B;
 $cta-purple: #A682FF;
-
-// Overlays
-$smoke: rgba($black-grey, .33);
 
 // Typography
 $default-font-size : 1rem;
 $default-line-height : 1.33rem;
+$header-font: 'Limelight', sans-serif;
 $body-font: 'Merriweather Sans', sans-serif;
 
 // Buttons
@@ -44,6 +47,3 @@ $button-border: none;
 $button-radius: 2px;
 $button-height: 36px;
 $button-padding: 0 2rem;
-$button-background-focus: lighten($primary-green, 4%);
-$button-raised-background: $primary-green;
-$button-floating-background: $primary-green;
