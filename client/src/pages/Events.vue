@@ -1,5 +1,0 @@
-<template>
-  <Layout>
-    
-  </Layout>
-</template>
